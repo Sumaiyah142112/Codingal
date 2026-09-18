@@ -17,7 +17,7 @@ new = numbers.copy()
 
 for number in new:
    if new[number] % 2 != 0:
-      [number] = -1
+      new[number] = -1
     
 
 print(new)
