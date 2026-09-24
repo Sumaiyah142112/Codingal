@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 df = sns.load_dataset('penguins')
 
 clean = df.dropna()
-#print(clean)
-#print(df.head())
-#print(df.tail())
-#print(df.info())
-#print(df.describe())
+print(clean)
+print(df.head())
+print(df.tail())
+print(df.info())
+print(df.describe())
 
 print(df['species'].unique())
 print(df['island'].unique())
@@ -21,7 +21,7 @@ plt.show()
 
 sns.kdeplot(data = df,x = 'flipper_length_mm',hue = 'island',fill = True)
 plt.title("Islands")
-plt.xlabel("Flipper_Lenght")
+plt.xlabel("Flipper_Length")
 plt.ylabel("Islands")
 plt.show()
 
