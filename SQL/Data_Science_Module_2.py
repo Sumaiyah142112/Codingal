@@ -12,7 +12,7 @@ print(df.isnull().any())
 
 subset = df.iloc[:5200,:]
 plt.figure(figsize=(12,8))
-sns.heatmap(subset.isnull(),cmap='viridis')
+sns.heatmap(subset.isnull(),cbar=False,cmap='viridis')
 plt.show()
 
 
