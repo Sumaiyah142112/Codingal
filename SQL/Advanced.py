@@ -19,7 +19,7 @@ df.columns
 sns.pairplot(df)
 plt.figure(figsize=(8,6))
 
-numeric_df = 
+numeric_df = df.select_dtypes(include=[np.number])
 
 sns.heatmap(
     numeric_df.corr(),
