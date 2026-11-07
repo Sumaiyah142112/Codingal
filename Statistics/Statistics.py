@@ -28,7 +28,7 @@ print("Median value of age: ",median_age )
 median_fare = np.median(df['Fare'])
 print("Median value of fare: ",median_fare )
 
-#Mode value of age and pclass
+#Mode value of age and pclass for QUANTATIVE Variables
 mode_age = stats.mode(df['Age'])
 print("Mode Value of Age: ",mode_age)
 
