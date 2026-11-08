@@ -13,10 +13,12 @@ df.isnull().sum()
 plt.hist(df['Runtime'])
 plt.ylabel("Count of Movies")
 plt.xlabel("Runtime")
+plt.show()
 
 plt.hist(df['IMDB_Rating'])
 plt.ylabel("Count of Movies")
 plt.xlabel("IMDB Rating")
+plt.show()
 
 df['Runtime'].unique()
 
@@ -24,7 +26,7 @@ bins_time = np.arange(80,230,10)
 plt.hist(df['Runtime'],edgecolor='black',bins=bins_time,color='g')
 plt.ylabel("Count of Movies")
 plt.xlabel("Runtime")
-
+plt.show()
 
 df["IMDB_Rating"].unique()
 
@@ -33,4 +35,5 @@ plt.hist(df['IMDB_Rating'],edgecolor='black',bins=bins_rating,color='g')
 plt.ylabel("Count of Movies")
 plt.xlabel("IMDB Rating")
 plt.xticks(bins_rating)
+plt.show()
 
